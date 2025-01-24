@@ -20,7 +20,7 @@ A backend boilerplate for a CRUD application with user authentication, product m
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo.git
+git clone https://github.com/MohammadFahad2606/Final-hackathon-Night.git
 ```
 
 ### 2. Install Dependencies
@@ -77,7 +77,7 @@ project-root/
 │   └── userRoutes.js
 │
 ├── .env                  # Environment variables
-├── server.js             # Main entry point of the application
+├── index.js             # Main entry point of the application
 ├── package.json          # Dependencies and scripts
 └── README.md             # Documentation
 ```
@@ -240,8 +240,4 @@ project-root/
      }
      ```
 
----
 
-## License
-
-This project is open-source and available under the MIT License.
