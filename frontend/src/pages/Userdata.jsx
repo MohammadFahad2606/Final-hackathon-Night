@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { getUserByTokenFronend, patchData } from "../utils/axios";
-import { Link } from "react-router-dom";
 
 const DepartmentStaff = () => {
   const [data, setData] = useState(null);
@@ -45,7 +44,7 @@ const DepartmentStaff = () => {
             <a href="#">Users</a>
           </li>
           <li className="hover:bg-blue-700 p-2 rounded">
-          <Link to="/userdata">Users</Link>
+            <a href="#">Settings</a>
           </li>
         </ul>
       </div>

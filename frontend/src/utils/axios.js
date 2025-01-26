@@ -18,14 +18,27 @@ export const postData = async (endpoint, data) => {
   }
 };
 
-export const putData = async (endpoint, data) => {
+const updateUserData = async () => {
+  const userData = {
+    cnic: '12345',
+    name: 'John Doe',
+    contactDetails: '123-456-7890',
+    address: '123 Main St',
+    purpose: 'Financial Assistance',
+    token: 'XYZ123',
+    count: 1,
+    remarks: 'Follow-up required',
+    assistanceStatus: 'In Progress'
+  };
+
   try {
-    const response = await axiosInstance.put(endpoint, data);
-    return response.data;
+    const response = await putData('/api/user/update', userData);
+    console.log('Updated user:', response);
   } catch (error) {
-    throw error.response?.data || error.message;
+    console.error('Error updating user:', error);
   }
 };
+
 
 export const patchData = async (endpoint, data) => {
   try {
